@@ -56,6 +56,19 @@ async function startServer() {
 
   registerOAuthRoutes(app);
 
+
+    // Root route
+  app.get("/", (_req, res) => {
+    res.json({ 
+      message: "ASHA Worker App API is running", 
+      status: "online",
+      timestamp: new Date().toISOString(),
+      endpoints: {
+        health: "/api/health",
+        trpc: "/api/trpc"
+      }
+    });
+  });
   app.get("/api/health", (_req, res) => {
     res.json({ ok: true, timestamp: Date.now() });
   });
