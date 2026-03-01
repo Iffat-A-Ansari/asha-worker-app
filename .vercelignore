@@ -1,0 +1,51 @@
+# Dependencies
+node_modules
+.pnp
+.pnp.js
+
+# Testing
+coverage
+.nyc_output
+
+# Production
+build
+dist
+.expo
+.expo-shared
+
+# Misc
+.DS_Store
+.env
+.env.local
+.env.*.local
+*.log
+*.swp
+*.swo
+*~
+.idea
+.vscode
+*.iml
+
+# Git
+.git
+.gitignore
+
+# Development
+.next
+out
+
+# IDE
+.vscode
+.idea
+*.sublime-project
+*.sublime-workspace
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Project specific
+screenshots
+.expo-shared
+android
+ios
